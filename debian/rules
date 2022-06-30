@@ -1,0 +1,9 @@
+#! /usr/bin/make -f
+
+include /usr/share/ql-deb-utils/Makefile
+
+export DH_VERBOSE = 1
+export PYBUILD_NAME = redfish
+
+%:
+	dh $@ --with python3 --buildsystem=pybuild

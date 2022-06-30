@@ -1,0 +1,33 @@
+Source: python-redfish-library
+Section: admin
+Priority: important
+Maintainer: Goswin von Brederlow <brederlo@q-leap.de>
+Build-Depends:
+ ql-deb-utils (>= 1.0),
+ debhelper-compat (= 12),
+ dh-python,
+ python3-all,
+ python3-setuptools,
+ python3-requests-toolbelt,
+ python3-jsonpatch,
+ python3-jsonpath-rw,
+Standards-Version: 4.5.0
+X-Python3-Version: >= 3.8
+
+Package: python3-redfish-library
+Priority: important
+Architecture: all
+Pre-Depends: ${misc:Pre-Depends}
+Depends: ${misc:Depends}, ${python3:Depends}
+Description: Python library for RESTful APIs
+ The Python Redfish library is the platform on which the Redfish tool
+ was built on. It's main purpose is to simplify the communication to
+ any RESTful API. REST (Representational State Transfer) is a web
+ based software architectural style consisting a set of constraints
+ that focus on a system's resource. Redfish library performs the basic
+ HTTP operations GET, POST, PUT, PATCH and DELETE on resources using
+ the HATEOS (Hypermedia as the Engine of Application) REST
+ architecture. Most API's allow the clients to manage and interact
+ with a fixed URL and several URIs. Go to the API overview section for
+ more details.
+

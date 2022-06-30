@@ -1,0 +1,5 @@
+python-redfish-library (3.1.6-ql.1) stable; urgency=medium
+
+  * Initial release.
+
+ -- Goswin von Brederlow <brederlo@q-leap.de>  Thu, 30 Jun 2022 09:27:10 +0000
